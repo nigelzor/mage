@@ -57,7 +57,7 @@ public class CompareCardText {
 
     public static void main(String[] args) throws IOException {
         SortedMap<String, List<String>> all = new TreeMap<>();
-        for (Card card : CompareWithMtgJsonTest.allCards()) {
+        for (Card card : VerifyCardDataTest.allCards()) {
             if (card.isSplitCard()) {
                 addRules(all, ((SplitCard) card).getLeftHalfCard());
                 addRules(all, ((SplitCard) card).getRightHalfCard());
